@@ -8,10 +8,7 @@
     <h1>My books</h1>
     {%for i in book_key%}
     <h1>{{i.title}}</h1>
-    <p>{{i.description}}</p>
-    <img src="{{i.image.url}}">
-    <p>{{i.cost}}</p>
-    <p>{{i.created_date}}</p>
+    <button><a href="/book_detail/{{i.id}}">Next</a></button>
     {% endfor %}
 </body>
 </html>
