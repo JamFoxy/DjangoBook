@@ -15,7 +15,7 @@ class Book(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='')
     genre = models.CharField(max_length=100, choices= GENRE, default = GENRE[0],  null=True)
-    author = models.CharField(max_length=100)
+    video = models.URLField(null=True)
     cost = models.IntegerField()
     created_date = models.DateTimeField(auto_created=True)
 
